@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <nav class="navbar">
+      <img class="logo" src="https://parspng.com/wp-content/uploads/2022/11/lamppng.parspng.com-2.png" alt="logo">
+      <ul class="navbar--extra">
+        <li>
+          <a href="./">🔍</a>
+        </li>
+        <li>
+          <a href="./">🔔</a>
+        </li>
+        <li>
+          <a href="./">
+            🚀
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+  <section class="hero">
+    <img src="https://picsum.photos/1024/1024" alt="hero image">
+  </section>
+  
+  <ul class="list">
+    <li class="list--item">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit minima reprehenderit eligendi.</p>
+    </li>
+    <li class="list--item">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit minima reprehenderit eligendi.</p>
+    </li>
+    <li class="list--item">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit minima reprehenderit eligendi.</p>
+    </li>
+    <li class="list--item">
+      <h3>Lorem ipsum dolor.</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit minima reprehenderit eligendi.</p>
+    </li>
+  </ul>
+  <img class="layer" src="https://static.vecteezy.com/system/resources/thumbnails/001/206/201/small/denver-mountain.png" alt="mountain">
+
+  <script>
+    let isDarkMode = false;
+    const bodyEl = document.querySelector('body')
+    const logoEl = document.querySelector('.logo');
+
+    logoEl.addEventListener('click', () => {
+      isDarkMode = !isDarkMode;
+
+      if(isDarkMode) {
+        bodyEl.style.backgroundColor = 'white';
+        bodyEl.style.color = 'black';
+      } else {
+        bodyEl.style.backgroundColor = 'black';
+        bodyEl.style.color = 'white';
+      }
+    })
+  </script>
+</body>
+</html>

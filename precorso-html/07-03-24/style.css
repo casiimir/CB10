@@ -1,0 +1,50 @@
+/* SELETTORE TAG */
+h1 {
+  color: lightseagreen;
+}
+
+/* SELETTORE CLASSE */
+.title {
+  color: black;
+}
+
+/* SELETTORE ID */
+#pippo {
+  color: green;
+}
+
+/* START Real CSS */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+input, select {
+  height: 30px;
+  border-radius: 4px;
+  border: 1px solid lightgray;
+}
+
+.registration-form {
+  width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.437);
+}
+
+.submit-btn {
+  background-color: blueviolet;
+  border: 0;
+  height: 40px;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio di una form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="registration-form">
+    <h1 class="title">Registrazione</h1>
+    <label for="name">Nome utente</label>
+    <input id="name" type="text" placeholder="Inserisci nome" required>
+
+    <label for="email">Email</label>
+    <input id="email" type="email" placeholder="Inserisci email" required>
+
+    <label for="number">Numero</label>
+    <input id="number" type="number" placeholder="Inserisci numero" required>
+
+    <label for="date">Data di nascita</label>
+    <input id="date" type="date" required>
+
+    <label for="country">Nazionalità</label>
+    <select id="country">
+      <option value="italy">Italiano</option>
+      <option value="france">Francia</option>
+      <option value="spain">Spagna</option>
+      <option value="germany">Germania</option>
+    </select>
+
+    <input class="submit-btn" type="submit" value="Invia">
+  </form>
+</body>
+</html>

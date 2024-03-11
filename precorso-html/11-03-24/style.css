@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: lightskyblue;
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar svg {
+  width: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* axis-X */
+  align-items: flex-start;
+  margin-top: 100px;
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+}
+
+.item,
+.item2 {
+  height: 50px;
+  padding: 20px;
+  background-color: lightseagreen;
+  border: 1px solid white;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 1);
+  border-radius: 12px;
+  color: white;
+}
+
+.first {
+  align-self: flex-end;
+}
+
+.item2 {
+  align-self: flex-end;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(
+    56deg,
+    rgba(235, 0, 255, 1) 0%,
+    rgba(10, 249, 130, 1) 100%
+  );
+  border-radius: 12px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.image {
+  border-radius: 0;
+  box-shadow: 0 0 3px 1px black;
+  filter: contrast(1.23) saturate(2.2);
+  transition: all 3.35s;
+}
+
+.image1:hover {
+  border-radius: 100%;
+  transform: rotate(360deg);
+}
+
+.image2:hover {
+  border-radius: 50px;
+  transform: rotate(360deg);
+}
+
+.image3:hover {
+  border-top-right-radius: 270px;
+  border-top-left-radius: 270px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 210px;
+  transform: rotate(360deg);
+}
+
+.lateral-sx {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.lateral-dx {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.content {
+  width: 100%;
+  transition: all 0.35s;
+}
+
+.content img {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.content:hover {
+  filter: contrast(1.23) saturate(2.2);
+  transform: scale(0.6);
+}

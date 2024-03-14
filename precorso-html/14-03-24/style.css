@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 20px;
+}
+
+h3,
+h4,
+p {
+  margin: 4px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.navbar input {
+  padding-left: 14px;
+  width: 100%;
+  height: 36px;
+  background-color: #efefef;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* .navbar::before {
+  content: "🔎";
+  position: relative;
+  left: 34px;
+} */
+
+.navbar button {
+  width: 44px;
+  height: 36px;
+  border: 0;
+  background-color: #efefef;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.35s;
+}
+
+.navbar button:hover,
+.navbar button:active {
+  background-color: lightseagreen;
+  color: white;
+}
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 24px 18px 24px;
+  background: linear-gradient(
+    56deg,
+    rgba(8, 29, 62, 1) 0%,
+    rgba(107, 132, 140, 1) 100%
+  );
+  color: white;
+  border-radius: 14px;
+}
+
+.hero__img {
+  width: 100px;
+  transform: translateY(-30px);
+  transition: transform 0.35s;
+}
+
+.hero__img:hover {
+  transform: translateY(-60px);
+}
+
+.hero button {
+  height: 30px;
+  padding: 4px 8px;
+  background: linear-gradient(
+    56deg,
+    rgba(255, 136, 254, 1) 0%,
+    rgba(223, 20, 255, 1) 100%
+  );
+  border: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Products */
+.products {
+  display: flex;
+  flex-direction: column;
+}
+
+.products--list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px;
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.product img {
+  position: absolute;
+  width: 186px;
+  height: 186px;
+  border-radius: 16px;
+  filter: saturate(1.4) contrast(1.2);
+  transform: translate(-3px, -3px);
+  z-index: -1;
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    flex-direction: row;
+  }
+
+  .navbar {
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .hero__img {
+    height: 140px;
+  }
+
+  .product {
+  }
+}

@@ -1,0 +1,78 @@
+.square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 100px;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(
+    56deg,
+    rgba(41, 70, 210, 1) 0%,
+    rgba(160, 18, 189, 1) 100%
+  );
+
+  transition: all 8.35s;
+}
+
+.square:hover {
+  background: linear-gradient(
+    56deg,
+    rgba(210, 41, 41, 1) 0%,
+    rgba(255, 177, 0, 1) 100%
+  );
+  transform: rotate(1000deg);
+}
+
+.circle {
+  position: relative;
+  top: 100px;
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(
+    56deg,
+    rgba(210, 41, 41, 1) 0%,
+    rgba(255, 177, 0, 1) 100%
+  );
+  border-radius: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
+  transition: transform 0.35s;
+}
+
+.circle:active {
+  transform: scale(1.5);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid lightgrey;
+}
+
+.navbar-list {
+  top: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-content {
+  margin-top: 100px;
+}
+
+.card {
+  width: 240px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+}
+
+.card-image {
+  width: 240px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.card-text {
+  padding: 0 20px 10px;
+}
